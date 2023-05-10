@@ -1,5 +1,5 @@
 import math
-from utils import topological_sort
+from minigrad.utils import topological_sort
 
 
 class Value:
