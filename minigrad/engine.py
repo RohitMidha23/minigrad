@@ -62,6 +62,12 @@ class Value:
         output._backward = _backward
         return output
 
+    def __sub__(self, other):  # self - other
+        return self + (-other)
+
+    def __neg__(self):  # -self
+        return self * (-1)
+
     def exp(self):
         x = self.data
         r = math.exp(x)
